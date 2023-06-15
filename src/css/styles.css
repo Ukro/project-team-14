@@ -7,6 +7,20 @@
 @import url('./reset.css');
 @import url('./vite-promo.css');
 @import url('./header.css');
+@import url('./hero.css');
+@import url('./advantages.css');
+@import url('./unique-comonents.css');
+@import url('./how-its-made.css');
+@import url('./our-products.css');
+@import url('./top-sellers.css');
+@import url('./reviews.css');
+@import url('./subscribe.css');
+@import url('./footer.css');
+
+@import url('./buy-now.css');
+@import url('./leave-a-review-about-our-chocolate.css');
+@import url('./explore-our-new-chocolate-first.css');
+@import url('./mobile-menu.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
