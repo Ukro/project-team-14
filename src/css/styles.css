@@ -36,4 +36,16 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --main-font-family: 'Montserrat';
+  --text-light-color: #ffffff;
+  --text-dark-color: #111111;
+  --accent-color: #fd9222;
+  --hover-accent-color: #fcf1e0;
+  --bg-dark-color: #1e1823;
+  --bg-light-color: D#E2E2E2;
+  --text-font-size: 14px;
+  --title-font-size: 24px;
+  --text-font-weight: 400;
+  --title-font-weight: 600;
 }
