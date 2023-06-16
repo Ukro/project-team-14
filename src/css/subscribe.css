@@ -1,3 +1,102 @@
 /* SUBSCRIBE SECTION */
-
+.subscribe {
+  background-image: url(../img/subscribe/subcribe-mobile-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 370px;
+}
+.subscribe-header {
+  font-family: var(--main-font-family);
+  font-weight: 600;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+  text-align: center;
+  padding-top: 72px;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--text-light-color);
+  max-width: 378px;
+}
+.subscribe-text {
+  font-family: var(--main-font-family);
+  font-size: 14px;
+  line-height: 1.29;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: var(--text-light-color);
+  max-width: 467px;
+}
+.subscribe-btn {
+  font-family: var(--main-font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  color: var(--text-light-color);
+  background-color: var(--accent-color);
+  border-radius: 100px;
+  border: none;
+  min-width: 172px;
+  padding: 14px 40px;
+  display: block;
+  margin: 0 auto 0 auto;
+}
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background-color: var(--hover-accent-color);
+  color: var(--accent-color);
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .subscribe {
+    background-image: url(../img/subscribe/subcribe-mobile-bg@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .subscribe {
+    background-image: url(../img/subscribe/subcribe-tablet-bg.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .subscribe {
+    background-image: url(../img/subscribe/subcribe-tablet-bg@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    background-image: url(../img/subscribe/subcribe-desktop-bg.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .subscribe {
+    background-image: url(../img/subscribe/subcribe-desktop-bg@2x.jpg);
+  }
+}
+@media screen and (max-width: 767px) {
+  .subscribe-header {
+    font-size: 20px;
+    line-height: 1.2;
+    max-width: 291px;
+    padding-top: 62px;
+  }
+  .subscribe-text {
+    max-width: 326px;
+  }
+  .subscribe-btn {
+    min-width: 128px;
+    padding: 12px 28px;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}
 /* /SUBSCRIBE SECTION */

@@ -1,3 +1,30 @@
+@media screen and (max-width:767px) {
+    .our-products-container{
+     width: 375px;
+     margin-left: auto;
+     margin-right: auto; 
+     padding-left: 20px;
+     padding-right: 20px;  
+    }
+  }
+  
+  @media screen and (min-width:768px) {
+    .our-products-container{
+        width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+  }
+  
+  @media screen and (min-width:1200px) {
+    .our-products-container{
+        width:1200px;
+    }
+    
+  }
+
 .our-products{
     background-color: #FAFAFA;
     margin-bottom: 72px;
@@ -62,6 +89,9 @@ border-radius: 15px;
   }
 
   .our-products-buy-chocolate-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #FAFAFA;
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 100px;
@@ -71,6 +101,8 @@ border-radius: 15px;
     color: #111111;
     width: 94px;
     height: 33px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 
@@ -91,3 +123,13 @@ border-radius: 15px;
     background: #FD9222; 
     border-radius: 20px; 
 }
+
+/* tablet */
+
+
+@media screen and (min-width:768px) and (max-width:1199px) {
+  .our-products-container{
+    padding-right: 0;
+  }  
+}
+
