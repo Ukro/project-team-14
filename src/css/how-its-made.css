@@ -16,8 +16,8 @@
 }
 
 .how-paragraph {
-  width: 307;
-  height: 72p;
+  width: 307px;
+  height: 72px;
   font-style: normal;
   font-family: 'Montserrat';
   font-weight: 600;
@@ -26,10 +26,27 @@
   color: #111111;
 }
 
+.how-picture {
+  width: 335px;
+  height: 500px;
+}
+
 @media (min-wdth: 768px) {
   .how-h {
     width: 205px;
     height: 28px;
     font-size: 24px;
+  }
+
+  .how-picture {
+    width: 614px;
+    height: 776px;
+  }
+}
+
+@media (min-wdth: 1158) {
+  .how-picture {
+    width: 600px;
+    height: 400px;
   }
 }
