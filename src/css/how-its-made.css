@@ -1,17 +1,35 @@
 .how-h {
-  width: 205px;
-  height: 28px;
+  width: 171px;
+  height: 24px;
 
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 28px;
-  /* identical to box height, or 117% */
+  font-size: 20px;
+  line-height: 24px;
 
   text-align: center;
   letter-spacing: -0.03em;
   text-transform: uppercase;
 
   color: #111111;
+}
+
+.how-paragraph {
+  width: 307;
+  height: 72p;
+  font-style: normal;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #111111;
+}
+
+@media (min-wdth: 768px) {
+  .how-h {
+    width: 205px;
+    height: 28px;
+    font-size: 24px;
+  }
 }

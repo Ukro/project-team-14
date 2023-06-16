@@ -1,11 +1,38 @@
 <section>
-  <h1>How it's made?</h1>
+  <h1 class="how-h">
+    How it's <span class="our-products-main-title-span">made?</span>
+  </h1>
 
   <div>
-    <iframe src="https://youtu.be/K0T00E2IsDs" frameborder="0">video</iframe>
+    <picture>
+      <source
+        srcset="
+          ./img/how/desktop/image@1x.jpg 1x,
+          ./img/how/desktop/image@2x.jpg 2x
+        "
+        media="(min-width: 1200px)" />
+
+      <source
+        srcset="
+          ./img/how/tablet/image@1x.jpg 1x,
+          ./img/how/tablet/image@2x.jpg 2x
+        "
+        media="(min-width: 768px)" />
+
+      <source
+        srcset="
+          ./img/how/mobile/image@1x.jpg 1x,
+          ./img/how/mobile/image@2x.jpg 2x
+        "
+        media="(min-width: 320px)" />
+
+      <img src="./images/img01.jpg" alt="Mark Guerrero" width="264"
+    /></picture>
 
     <div>
-      <p>Try our chocolates today and discover the perfect balance of flavor</p>
+      <p class="how-paragraph">
+        Try our chocolates today and discover the perfect balance of flavor
+      </p>
       <ul>
         <li>
           Heat the milk in a saucepan without bringing it to a boil. Add sugar
