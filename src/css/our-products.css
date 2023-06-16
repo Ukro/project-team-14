@@ -1,0 +1,93 @@
+.our-products{
+    background-color: #FAFAFA;
+    margin-bottom: 72px;
+}
+
+.swiper-wrapper{
+    margin-bottom: 20px;
+}
+
+.swiper-slide{
+background: #FFFFFF;
+border: 1px solid rgba(17, 17, 17, 0.1);
+border-radius: 15px;
+}
+
+.our-products-item-container{
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.our-products-chocolate-img{
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    width: 230px;
+    height: 200px;
+    margin-bottom: 8px;
+}
+
+.our-products-main-title{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #111111;
+  margin-bottom: 32px;
+}
+
+.our-products-main-title-span{
+    color: #FD9222;
+}
+
+  .our-products-item-title{  
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #111111;
+    margin-bottom: 2px;
+  }
+  .our-products-sort-chocolate{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: rgba(17, 17, 17, 0.7);
+    margin-bottom: 18px;
+  }
+
+  .our-products-buy-chocolate-btn{
+    background-color: #FAFAFA;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #111111;
+    width: 94px;
+    height: 33px;
+  }
+
+
+
+.swiper-pagination {
+    position: static;
+  }
+
+.swiper-pagination-bullet{
+  width: 13px;
+  height: 13px;
+  background: rgba(17, 17, 17, 0.1);
+}
+
+.swiper-pagination-bullet-active{
+    width: 28px;
+    height: 13px;
+    background: #FD9222; 
+    border-radius: 20px; 
+}
