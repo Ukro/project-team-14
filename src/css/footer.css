@@ -24,6 +24,17 @@ background-color: var(--bg-dark-color);
 .foot-title-text-word-clr {
     color: var(--accent-color);
 }
+.foot-container {
+
+}
+
+.foot-title {
+
+}
+
+.foot-title-text {
+
+}
 
 .foot-contacts {
 
@@ -93,5 +104,27 @@ background-color: var(--bg-dark-color);
     font-size: 14px;
     line-height: 16px;
     margin-top: 32px;
+    background-color: tomato;
+    height: 1px;
+    width: 335px;
+    display: block;
+    /* margin-left: 20px; */
+    /* margin-right: 20px; */
+}
+
+.foot-contacts-title {
+
+}
+
+.foot-contacts-social {
+
+}
+
+.social-svg {
+    /* border: 1.5px solid tomato; */
+    fill: var(--text-dark-color);
+}
+
+.foot-map-site-list {
 
 }
