@@ -23,10 +23,11 @@
 }
 
 .top-text{
+    width: 306px;
     font-size: 14px;
     line-height: 1.3;
     letter-spacing: -0.02em;
-    padding: 20px 29px 0 0;  
+    padding-top: 20px;  
 }
 
 .top-frst{
@@ -58,4 +59,28 @@
 .top-btn:focus{
     color: var(--accent-color);
     background: var(--hover-accent-color);
+}
+
+@media screen and (min-width:768px){
+    .top-title{
+        margin-bottom: 50px;
+    }
+    .top-image{
+        width: 344px;
+    }
+    .top-wrp{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    .top-text{
+        padding-top: 32px;
+    }
+    .top-btn{
+        margin-top: 32px;
+    }
+    .top-button{
+        justify-content: flex-end;
+        padding-bottom: 100px;
+    }
 }
