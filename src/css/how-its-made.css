@@ -110,7 +110,7 @@
   width: 335px;
 }
 
-@media (min-wdth: 768px) {
+@media screen and (min-wdth: 768px) {
   .how-main-blocks {
     width: 614px;
   }
@@ -125,7 +125,7 @@
 
   .how-picture {
     width: 614px;
-    height: 776px;
+    /* height: 776px; */
   }
 
   .how-li {
@@ -160,12 +160,12 @@
 
   .how-picture {
     width: 600px;
-    height: 400px;
+    /* height: 400px; */
   }
 
   .how-li {
     width: 409px;
-    height: 54px;
+    /* height: 54px; */
     left: 16px;
     top: 0px;
 
