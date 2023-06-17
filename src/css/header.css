@@ -1,21 +1,135 @@
 .header {
-  padding: 20px 0;
+  background-color: var(--text-light-color);
 }
 
-.nav-list {
+.header-container {
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 14px;
 }
 
-.nav-link {
+.header-logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.header-logo-first-part {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.03em;
+  color: #111111;
+}
+
+.header-logo {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.03em;
+  color: #111111;
+}
+
+.header-logo-icon {
+  fill: var(--hover-accent-color);
+}
+
+.header-menu-open-button {
+  border: none;
+  background-color: transparent;
+  fill: #111111;
+  padding: 0;
+  width: 28px;
+  height: 28px;
+}
+
+.header-nav {
+  display: none;
+}
+
+.header-app-menu {
+  display: none;
+}
+
+.mobile-menu {
+  position: fixed;
+  height: 100%;
+  width: 220px;
+  top: 0;
+  right: 0;
+  background: var(--bg-dark-color);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.header-mobile-menu-wrapper {
+  padding: 136px 20px;
+  padding-left: 50px;
+}
+
+.header-close-btn {
+  border: none;
+  background-color: transparent;
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.mobile-nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.mobile-icon {
+  fill: var(--text-light-color);
+}
+
+.mobile-nav-link {
+  font-family: 'Montserrat';
+  font-style: normal;
   font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+
+  color: #ffffff;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+.mobile-app-menu {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    width: 375px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
 }
