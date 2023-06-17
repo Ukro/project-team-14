@@ -64,7 +64,7 @@
 
 .how-blocks {
   width: 335px;
-  height: 456px;
+  /* height: 456px; */
 
   background: #ffffff;
   border-radius: 15px;
@@ -79,6 +79,7 @@
 }
 
 .how-picture {
+  display: block;
   width: 335px;
   height: 500px;
   margin-bottom: 20px;
@@ -93,6 +94,16 @@
 
 .how-svg {
   /* padding-bottom: 10px; */
+}
+
+.how-ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.how-li::marker {
+  content: url(./img/icons.svg#icon-how_point);
 }
 
 @media (min-wdth: 768px) {
