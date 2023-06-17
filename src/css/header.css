@@ -180,3 +180,9 @@ fill: var(--accent-color);
     width: 768px;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
