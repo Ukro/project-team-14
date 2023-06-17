@@ -63,6 +63,18 @@
 }
 
 .how-blocks {
+  width: 335px;
+  height: 456px;
+
+  background: #ffffff;
+  border-radius: 15px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  z-index: 1;
   padding: 20px 14px 20px 14px;
 }
 
@@ -77,6 +89,10 @@
   align-items: center;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.how-svg {
+  /* padding-bottom: 10px; */
 }
 
 @media (min-wdth: 768px) {
