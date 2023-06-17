@@ -1,8 +1,9 @@
 .header {
-  background-color: var(--text-light-color);
+  background-color: #FAFAFA;
 }
 
 .header-container {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -113,8 +114,6 @@ transform: scale(1.15);
   gap: 24px;
 }
 
-
-
 .mobile-nav-item {
   position: relative;
 }
@@ -136,7 +135,7 @@ transform: scale(1.15);
 }
 
 .mobile-icon {
-  fill: var(--text-light-color);
+  stroke: var(--text-light-color);
 }
 
 .mobile-icon:hover,
@@ -179,10 +178,123 @@ fill: var(--accent-color);
   .container {
     width: 768px;
   }
+
+     .header-container {
+       padding: 24px 0;
+     }
+
+  .header-menu-open-button {
+      width: 32px;
+      height: 32px;
+    }
+
+    .header-menu-open-button-icon {
+      width: 24px;
+      height: 16px;
+    }
+.mobile-menu {
+  width: 290px;  
+}
+
+.mobile-close-btn {
+  width: 32px;
+  height: 32px;
+}
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
   }
+
+    .header-container {
+      padding-bottom: 32px;
+    }
+
+  .header-menu-open-button {
+    display: none;
+  }
+
+  .header-nav {
+    display: block;
+
+  }
+
+.header-app-menu {
+  display: block;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.header-nav-menu {
+  display: flex;
+  gap: 24px;
+}
+
+.header-app-menu {
+  display: flex;
+  gap: 18px;
+}
+
+.header-app-item {
+  fill: transparent;
+  stroke: var(--text-dark-color);
+}
+
+.header-app-item:hover,
+.header-app-item:focus {
+  stroke: var(--accent-color);
+}
+
+.header-logo {
+  font-size: 18px;
+}
+
+.header-logo-first-part {
+  font-size: 18px;
+}
+
+.header-logo-icon {
+width: 24px;
+height: 24px;
+}
+
+.header-nav-link {
+  font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    color: #111111;
+}
+
+.header-nav-item {
+  position: relative;
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: var(--accent-color);
+}
+
+.header-nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 24px;
+  height: 1px;
+  border: 1px solid #FD9222;
+  opacity: 0;
+}
+
+.header-nav-link:hover::after,
+.header-nav-link:focus::after {
+  opacity: 1;
+}
 }
