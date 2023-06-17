@@ -1,3 +1,7 @@
+.container {
+  font-size: small;
+}
+
 .how-h {
   width: 171px;
   height: 24px;
@@ -34,7 +38,7 @@
 
 .how-li {
   width: 291px;
-  height: 72px;
+  /* height: 72px; */
   left: 16px;
   top: 0px;
 
@@ -63,12 +67,25 @@
 }
 
 .how-blocks {
+  width: 335px;
+  /* height: 456px; */
+
+  background: #ffffff;
+  border-radius: 15px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  z-index: 1;
   padding: 20px 14px 20px 14px;
 }
 
 .how-picture {
+  display: block;
   width: 335px;
-  height: 500px;
+  /* height: 500px; */
   margin-bottom: 20px;
 }
 
@@ -79,16 +96,36 @@
   margin-right: 20px;
 }
 
-@media (min-wdth: 768px) {
-  .how-h {
-    width: 205px;
-    height: 28px;
-    font-size: 24px;
+.how-ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.how-li::marker {
+  content: url(./img/icons.svg#icon-how_point);
+}
+
+.how-main-blocks {
+  width: 335px;
+}
+
+@media screen and (min-wdth: 768px) {
+  .how-main-blocks {
+    width: 614px;
+  }
+
+  .how-paragraph {
+    width: 550px;
+  }
+
+  .how-blocks {
+    width: 614px;
   }
 
   .how-picture {
     width: 614px;
-    height: 776px;
+    /* height: 776px; */
   }
 
   .how-li {
@@ -108,17 +145,27 @@
 
     color: #111111;
   }
+
+  .how-h {
+    width: 205px;
+    height: 28px;
+    font-size: 24px;
+  }
 }
 
 @media (min-wdth: 1200) {
+  .how-main-blocks {
+    width: 1136px;
+  }
+
   .how-picture {
     width: 600px;
-    height: 400px;
+    /* height: 400px; */
   }
 
   .how-li {
     width: 409px;
-    height: 54px;
+    /* height: 54px; */
     left: 16px;
     top: 0px;
 
