@@ -110,7 +110,7 @@
   width: 335px;
 }
 
-@media screen and (min-wdth: 768px) {
+@media screen and (min-width: 768px) {
   .how-main-blocks {
     width: 614px;
   }
@@ -153,8 +153,9 @@
   }
 }
 
-@media (min-wdth: 1200) {
+@media screen and (min-width: 1200px) {
   .how-main-blocks {
+    display: flex;
     width: 1136px;
   }
 
