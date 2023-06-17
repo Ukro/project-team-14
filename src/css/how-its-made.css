@@ -106,11 +106,21 @@
   content: url(./img/icons.svg#icon-how_point);
 }
 
+.how-main-blocks {
+  width: 335px;
+}
+
 @media (min-wdth: 768px) {
-  .how-h {
-    width: 205px;
-    height: 28px;
-    font-size: 24px;
+  .how-main-blocks {
+    width: 614px;
+  }
+
+  .how-paragraph {
+    width: 550px;
+  }
+
+  .how-blocks {
+    width: 614px;
   }
 
   .how-picture {
@@ -135,9 +145,19 @@
 
     color: #111111;
   }
+
+  .how-h {
+    width: 205px;
+    height: 28px;
+    font-size: 24px;
+  }
 }
 
 @media (min-wdth: 1200) {
+  .how-main-blocks {
+    width: 1136px;
+  }
+
   .how-picture {
     width: 600px;
     height: 400px;
