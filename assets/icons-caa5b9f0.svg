@@ -59,6 +59,8 @@
 <path style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M29.333 2.667l-26.667 26.667M2.667 2.667l26.667 26.667"></path>
 </symbol>
 
-
+<symbol id="icon-how_point" viewBox="0 0 32 32">
+<path fill="#4c4c4c" style="fill: var(--color1, #4c4c4c); stroke: var(--color2, #eceded)" stroke="#eceded" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="4" d="M30 16c0 7.732-6.268 14-14 14s-14-6.268-14-14c0-7.732 6.268-14 14-14s14 6.268 14 14z"></path>
+</symbol>
 </defs>
 </svg>
