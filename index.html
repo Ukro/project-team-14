@@ -32,8 +32,8 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
     
-    <script type="module" crossorigin src="/project-team-14/assets/index-fac82e35.js"></script>
-    <link rel="stylesheet" href="/project-team-14/assets/index-6c216827.css">
+    <script type="module" crossorigin src="/project-team-14/assets/index-03f5ebd9.js"></script>
+    <link rel="stylesheet" href="/project-team-14/assets/index-14112737.css">
   </head>
   <body>
     <!-- Kate -->
@@ -95,7 +95,7 @@
   <!-- мобільне меню -->
   <div class="mobile-menu js-menu-container">
 <div class="header-mobile-menu-wrapper">
-<button class="header-close-btn js-close-menu" type="button">
+<button class="mobile-close-btn js-close-menu" type="button">
   <svg class="header-close-btn-icon" width="12" height="12">
     <use href="../img/header/header-icon.svg#icon-close-btn"></use>
   </svg>
@@ -145,12 +145,33 @@
 
     <main>
       <!-- Oleks -->
-      <section>
-    <h1></h1>
+      <section class="hero-section">
+    <h1 hidden>Hero</h1>
+    <h2 class="hero-text">Treat yourself or a loved one to 
+        our finest ingredients for a moment 
+        of pure delight!</h2>
+    <button type="button" class="hero-btn-buy">Buy now</button>
+    <button type="button" class="hero-btn-how">How it’s made</button>
+    
 </section>
 
       <!-- Oleks -->
-      <section>advantages</section>
+      <!-- advantages -->
+<section>
+  <div>
+    <h2>advantages</h2>
+    <ul>
+      <li>
+        <svg></svg>
+      </li>
+      <li>
+        <svg></svg>
+      </li>
+      <li><svg></svg></li>
+    </ul>
+  </div>
+</section>
+
 
       <!-- Fedir -->
       <section>unique</section>
@@ -162,7 +183,7 @@
     How it's <span class="our-products-main-title-span">made?</span>
   </h1>
 
-  <div>
+  <div class="how-main-blocks">
     <picture class="how-picture">
       <source
         srcset="/project-team-14/assets/image@1x-b73f66e0.jpg 1x, /project-team-14/assets/image@2x-424cbac5.jpg 2x"
@@ -190,7 +211,7 @@
             width="8"
             height="8"
           >
-            <use href="/project-team-14/assets/icons-caa5b9f0.svg#icon-how_point"></use>
+            <use href="/project-team-14/assets/icons-195a0108.svg#icon-how_point"></use>
           </svg>
 
           Heat the milk in a saucepan without bringing it to a boil. Add sugar
@@ -199,14 +220,14 @@
 
         <li class="how-li">
           <svg width="8" height="8">
-            <use href="/project-team-14/assets/icons-caa5b9f0.svg#icon-how_point"></use>
+            <use href="/project-team-14/assets/icons-195a0108.svg#icon-how_point"></use>
           </svg>
           At the same time, prepare a water bath. Melt the butter on it.
         </li>
 
         <li class="how-li">
           <svg width="8" height="8">
-            <use href="/project-team-14/assets/icons-caa5b9f0.svg#icon-how_point"></use>
+            <use href="/project-team-14/assets/icons-195a0108.svg#icon-how_point"></use>
           </svg>
           "Mix" the milk mixture and already liquid butter. Mix thoroughly with
           a silicone spatula so that the mass becomes uniform and silky.
@@ -214,14 +235,14 @@
 
         <li class="how-li">
           <svg width="8" height="8">
-            <use href="/project-team-14/assets/icons-caa5b9f0.svg#icon-how_point"></use>
+            <use href="/project-team-14/assets/icons-195a0108.svg#icon-how_point"></use>
           </svg>
           Heat the mixture over low heat, letting it barely boil.
         </li>
 
         <li class="how-li">
           <svg width="8" height="8">
-            <use href="/project-team-14/assets/icons-caa5b9f0.svg#icon-how_point"></use>
+            <use href="/project-team-14/assets/icons-195a0108.svg#icon-how_point"></use>
           </svg>
           Pour the chocolate into special containers (can be replaced with ice
           molds). Allow to cool and harden.
@@ -376,8 +397,7 @@
 
 
       <!-- Yaroslav -->
-      <section>top-sellers</section>
-
+      
 
       <!-- Potap -->
       <section>reviews</section>
@@ -392,7 +412,7 @@
     finest ingredients and handcrafted with the utmost care, each piece is a
     work of art that is sure to please.
   </p>
-  <button type="button" class="subscribe-btn">Subscribe</button>
+  <button type="button" class="subscribe-btn" data-modal-open>Subscribe</button>
 </section>
 
     </main>
@@ -400,50 +420,56 @@
     <!--Roman  -->
     <footer class="foot-section">
 <div class="container foot-container">
- <div class="foot-title">
-    <h2 class="foot-title-text">
-        <span class="foot-title-text-word-clr">Chocolate</span> a delicious cure for a bad day
-    </h2>
- </div> 
- <div class="foot-contacts">
-    <div class="foot-contuct-us-icon">
-        <h3 class="foot-contacts-title">
-            Contact us 
-        </h3>
+ 
+    
+    <div class="foot-tablet-title-contacts">
+        <div class="foot-title">
+            <h2 class="foot-title-text">
+                <span class="foot-title-text-word-clr">Chocolate</span> a delicious cure for a bad day
+            </h2>
+         </div> 
+         <div class="foot-contacts-container">
+            <div class="foot-contacts">
+                <div class="foot-contuct-us-icon">
+                    <h3 class="foot-contacts-title">
+                        Contact us 
+                    </h3>
+                    
+                    <div class="foot-contacts-social">
+                        <ul class="foot-contacts-social-list">
+                            <li>
+                                <a href="https://www.instagram.com/" class="" target="_blank">
+                                    <svg class="social-svg" width="18" height="18" >
+                                      <use href="/project-team-14/assets/icons-195a0108.svg#icon-instagram"></use>
+                                      </svg>
+                                  </a>
+                                  
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/" class="" target="_blank">
+                                    <svg class="social-svg" width="20" height="20" >
+                                        <use href="/project-team-14/assets/icons-195a0108.svg#icon-twitter"></use>
+                                      </svg>
+                                  </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
         
-        <div class="foot-contacts-social">
-            <ul class="foot-contacts-social-list">
-                <li>
-                    <a href="https://www.instagram.com/" class="" target="_blank">
-                        <svg class="social-svg" width="18" height="18" >
-                          <use href="/project-team-14/assets/icons-caa5b9f0.svg#icon-instagram"></use>
-                          </svg>
-                      </a>
-                      
+        <address class="foot-address">
+            
+            <ul class="foot-address-list">
+                <li class="foot-address-list-li">
+                    <a class="" href="tel:+380684439426">+380 (68) 443-94-26</a>
                 </li>
                 <li>
-                    <a href="https://twitter.com/" class="" target="_blank">
-                        <svg class="social-svg" width="20" height="20" >
-                            <use href="/project-team-14/assets/icons-caa5b9f0.svg#icon-twitter"></use>
-                          </svg>
-                      </a>
+                    <a class="" href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a>
                 </li>
             </ul>
-        </div>
-    </div>
-    
-    
-    <address class="foot-address">
-        
-        <ul class="foot-address-list">
-            <li class="foot-address-list-li">
-                <a class="" href="tel:+380684439426">+380 (68) 443-94-26</a>
-            </li>
-            <li>
-                <a class="" href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a>
-            </li>
-        </ul>
-    </address>
+        </address>
+         </div>
+         
     
  </div>  
  <div class="foot-map-site">
@@ -483,7 +509,34 @@
 
     <div>leav</div>
 
-    <div>explore-our-new-chocolate-first</div>
+    <div class="subscribe-pop-up is-hidden" data-modal>
+  <div class="subscribe-pop-up-window">
+    <div class="subscribe-pop-up-top">
+      <button type="button" class="subscribe-pop-up-close-btn" data-modal-close>
+        <svg class="subscribe-pop-up-close-icon" width="14" height="14">
+          <use href="/project-team-14/assets/icons-195a0108.svg#icon-close-icon"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="subscribe-pop-up-bottom">
+      <h2 class="subscribe-pop-up-header">
+        EXPLORE OUR
+        <span class="subscribe-pop-up-header-orange">NEW CHOCOLATE</span> FIRST!
+      </h2>
+      <form class="subscribe-pop-up-email-form">
+        <input
+          class="subscribe-pop-up-email-form-input"
+          type="email"
+          name="user-email"
+          placeholder="Enter your email"
+          required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+        />
+        <button type="submit" class="subscribe-pop-up-btn">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</div>
 
 
     <div>mobile-menu</div>
