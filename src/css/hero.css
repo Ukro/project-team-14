@@ -22,12 +22,18 @@ letter-spacing: -0.03em;
 color: #FFFFFF;
 }
 .hero-btn-buy {
-    min-width: 120px;
-    background-color: #FD9222;
-    font-family: 'Montserrat';
+min-width: 120px;
+color: #FFFFFF;
+background-color: #FD9222;
+border-radius: 100px;
+border: none;
+font-family: 'Montserrat';
 font-style: normal;
 font-weight: 600;
 font-size: 14px;
 line-height: 17px;
-color: #FFFFFF;
+padding: 12px 28px;
+height: 41px;
+margin-left: auto;
+margin-right: auto;
 }
