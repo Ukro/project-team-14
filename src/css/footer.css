@@ -76,9 +76,25 @@ background-color: var(--bg-dark-color);
 }
 
 .social-svg {
+    fill: transparent;
+    stroke: var(--text-light-color);
     
-    fill: var(--text-light-color);
 }
+
+
+.social-svg-instagram {
+    fill: var(--text-light-color);
+    stroke: var(--text-dark-color);
+    stroke-width: 0;
+}
+
+
+
+
+
+
+
+
 
 .foot-map-site {
     padding-bottom: 32px;
@@ -104,10 +120,14 @@ background-color: var(--bg-dark-color);
 
 }
 
+.foot-map-site-list:hover {
+    color: var(--accent-color);
+}
+
 
 /* ----------Tablet---------- */
 
-@media screen and (min-width: 768px) and (max-width: 1157px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
     
 
     .foot-title {
@@ -146,4 +166,57 @@ background-color: var(--bg-dark-color);
     .foot-contacts-container {
         margin-top: 50px;
     }
+}
+
+
+/* ----------Dekstop---------- */
+
+@media screen and (min-width: 1200px) {
+
+    .foot-title {
+        width: 303px;
+        margin-bottom: 0;
+        margin-right: 0;
+        padding-top: 0;
+        margin-top: 50px;
+        
+    }
+
+    .foot-title-text {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 34px;
+        letter-spacing: -0.02em;
+    }
+
+    .foot-tablet-title-contacts {
+        display: flex;
+        flex-direction: row;
+        gap: 543px;
+        
+
+    }
+
+    
+    .foot-contuct-us-icon {
+        flex-direction: unset;
+        justify-content: unset;
+        gap: 139px;
+    }
+
+    .foot-map-site-list {
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .foot-map-site {
+        padding-bottom: 50px;
+    }
+
+    .foot-contacts-container {
+        margin-top: 50px;
+    }
+
+    
 }
