@@ -68,7 +68,7 @@
   padding-top: 40px;
   padding-left: 40px;
   margin-bottom: 28px;
-  max-width: 298px;
+  min-width: 298px;
   font-family: var(--main-font-family);
   font-weight: 600;
   font-size: 24px;
@@ -169,7 +169,7 @@
   .subscribe-pop-up-header {
     font-size: 20px;
     line-height: 1.2;
-    max-width: 263px;
+    min-width: 263px;
     padding-top: 32px;
     padding-left: 24px;
   }
@@ -178,7 +178,6 @@
     padding-bottom: 32px;
   }
   .subscribe-pop-up-email-form-input {
-    /* position: relative; */
     width: 263px;
     height: 45px;
     padding: 14px 18px;
@@ -188,11 +187,27 @@
     line-height: 1.21;
   }
   .subscribe-pop-up-btn {
+    display: none;
+  }
+  .subscribe-pop-up-mobile-btn {
     position: absolute;
-    left: 59%;
-    padding: 14px 28px;
-    min-width: 100px;
+    left: 60%;
+    padding: 14px 22px;
+    width: 100px;
     height: 45px;
+    background-color: var(--accent-color);
+    border-radius: 100px;
+    border: none;
+    font-family: var(--main-font-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    color: var(--text-light-color);
+  }
+}
+@media screen and (min-width: 768px) {
+  .subscribe-pop-up-mobile-btn {
+    display: none;
   }
 }
 /* /SUBSCRIBE POP UP */
