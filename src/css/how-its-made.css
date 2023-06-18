@@ -52,18 +52,19 @@
   letter-spacing: -0.02em;
 
   color: #111111;
+  padding-top: 18px;
 }
 
 .how-paragraph {
   width: 307px;
-  height: 72px;
+  /* height: 72px; */
   font-style: normal;
   font-family: 'Montserrat';
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
   color: #111111;
-  margin-bottom: 20px;
+  margin-bottom: 2px;
 }
 
 .how-blocks {
@@ -99,7 +100,7 @@
 .how-ul {
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  /* row-gap: 20px; */
 }
 
 .how-li::marker {
@@ -132,7 +133,7 @@
 
   .how-li {
     width: 464px;
-    height: 36px;
+    /* height: 36px; */
     left: 16px;
     top: 0px;
 
@@ -171,7 +172,7 @@
   }
 
   .how-li {
-    width: 409px;
+    /* width: 409px; */
     /* height: 54px; */
     left: 16px;
     top: 0px;
