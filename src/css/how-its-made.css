@@ -164,11 +164,18 @@
   .how-main-blocks {
     display: flex;
     width: 1136px;
+    gap: 20px;
+  }
+
+  .how-blocks {
+    width: 516px;
   }
 
   .how-picture {
     width: 600px;
-    /* height: 400px; */
+    height: 400px;
+    margin-bottom: 0px;
+    background-size: contain;
   }
 
   .how-li {
