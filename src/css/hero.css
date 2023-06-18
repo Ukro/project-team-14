@@ -104,8 +104,9 @@ height: 41px;
   border-radius: 10px;
   min-width: 163px;
   height: 53px; 
-  padding: 15px 69px 20px 16px;
-  
+  padding-top: 15px;
+  padding-bottom: 20px;
+  padding-left: 16px;
 }
 .hero-scroll-icon {
     background-color: var(--text-light-color);
