@@ -76,16 +76,21 @@ background-color: var(--bg-dark-color);
 }
 
 .social-svg {
-    fill: transparent;
-    stroke: var(--text-light-color);
+    
     
 }
 
 
-.social-svg-instagram {
-    fill: var(--text-light-color);
-    stroke: var(--text-dark-color);
-    stroke-width: 0;
+/* .social-svg-link-twitter {
+    fill: transparent;
+    stroke: vavar(--text-light-color);
+    
+} */
+
+.social-svg-link {
+    fill: currentColor;
+    
+    
 }
 
 
@@ -120,7 +125,7 @@ background-color: var(--bg-dark-color);
 
 }
 
-.foot-map-site-list:hover {
+.foot-map-site-list-link:hover {
     color: var(--accent-color);
 }
 
@@ -218,5 +223,19 @@ background-color: var(--bg-dark-color);
         margin-top: 50px;
     }
 
+    .foot-map-site-list-link:hover {
+        color: var(--accent-color);
+        transition: 500ms;
+    }
+
+    .social-svg-link:hover {
+        transition: fill .5s;
+        fill: var(--accent-color);
+        stroke: var(--accent-color);
+        
+    }
+
     
+
+   
 }
