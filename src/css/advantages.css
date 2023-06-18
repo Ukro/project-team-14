@@ -1,6 +1,6 @@
 .advantages {
   background-color: var(--bg-dark-color);
-  height: 792px;
+  height: auto;
   padding: 20px;
 }
 
@@ -53,12 +53,12 @@
 }
 .advantages-container-item {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .advantages-container-list {
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   column-gap: 20px;
-  row-gap: 72px;
 }
