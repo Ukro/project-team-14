@@ -32,8 +32,8 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
     
-    <script type="module" crossorigin src="/project-team-14/assets/index-3c4c2566.js"></script>
-    <link rel="stylesheet" href="/project-team-14/assets/index-fc8b4ebc.css">
+    <script type="module" crossorigin src="/project-team-14/assets/index-511099ff.js"></script>
+    <link rel="stylesheet" href="/project-team-14/assets/index-52a79706.css">
   </head>
   <body>
     <!-- Kate -->
@@ -590,6 +590,93 @@
     <button class="review-send-btn">Leave a review</button>
   </div>
 </section>
+<!-- =========== Backdrop start ==========  -->
+<!-- class="backdrop is-hidden" -->
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="modal-close-btn" data-modal-close>
+      <svg class="modal-close-icon" width="28" height="28" fill="none">
+        <path
+          stroke="#111111"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M21 7 7 21M7 7l14 14"
+        />
+      </svg>
+      <!-- <svg class="modal-close-icon" width="28" height="28">
+        <use href="./img/reviews/x-close.svg"></use>
+
+    
+      </svg> -->
+    </button>
+    <p class="form-title">
+      Leave a review about
+      <span class="reviews-section-title-span"> our chocolate</span>
+    </p>
+    <form class="contact-form">
+      <div class="form-wrapper">
+        <div class="input-wrapper">
+          <input
+            class="form-input"
+            type="text"
+            id="user-name"
+            name="user-name"
+            placeholder="Name"
+          />
+        </div>
+
+        <div class="input-wrapper">
+          <input
+            class="form-input"
+            type="email"
+            id="user-email"
+            name="user-email"
+            placeholder="Email"
+          />
+        </div>
+
+        <div class="input-wrapper phone-input">
+          <input
+            class="form-input phone-input"
+            type="tel"
+            id="user-phone"
+            name="user-phone"
+            placeholder="Phone number"
+          />
+          <svg class="modal-ukr-flag" width="32" height="32" fill="none">
+            <g clip-path="url(#a)">
+              <path fill="gold" d="M31.832 5.058H.242v23.509h31.59V5.058Z" />
+              <path
+                fill="#0057B7"
+                fill-rule="evenodd"
+                d="M.243 5.058h31.589v11.754H.242V5.058Z"
+                clip-rule="evenodd"
+              />
+            </g>
+            <defs>
+              <clipPath id="a">
+                <path fill="#fff" d="M0 4.8h32v24H0z" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <textarea
+          class="textarea"
+          name="user-comment"
+          id="user-comment"
+          placeholder="Enter text"
+        ></textarea>
+      </div>
+
+      <button type="button" class="reviews-modal-button" data-modal-open>
+        Send
+      </button>
+    </form>
+  </div>
+</div>
+<script src="./js/leave-a-review-about-our-chocolate"></script>
 
 
       <!-- Kirill -->
