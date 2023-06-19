@@ -57,13 +57,25 @@ border-radius: 15px;
 
 .our-products-main-title{
   font-weight: 600;
-  font-size: 20px;
+
   line-height: 1.2;
   text-align: center;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: #111111;
   margin-bottom: 32px;
+}
+
+@media screen and (max-width:767px){
+  .our-products-main-title{
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width:768px){
+  .our-products-main-title{
+    font-size: 24px;
+  }
 }
 
 .our-products-main-title-span{
