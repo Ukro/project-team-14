@@ -54,8 +54,6 @@ font-size: 14px;
 line-height: 17px;
 padding: 12px 28px;
 height: 41px;
-margin-left: auto;
-margin-right: auto;
 }
 .hero-btn-buy:hover,
 .hero-btn-buy:focus {
@@ -76,9 +74,6 @@ margin-right: auto;
 border-radius: 100px;
 padding: 12px 28px;
 height: 41px;
-margin-left: auto;
-margin-right: auto;
-
 }
 
 .hero-btn-how:hover,
@@ -87,12 +82,16 @@ margin-right: auto;
   color: var(--accent-color);
 } 
 
-/* .hero-scroll-btn-wrapper {
+.hero-btn-container {
   display: flex;
-  align-items: center;
-  gap: 14px;
-} */
-.hero-scroll-text {
+  flex-direction: raw;
+  flex-wrap: wrap;
+  justify-content: start;
+  /* align-items: center; */
+  column-gap: 14px;
+  row-gap: 32px;
+} 
+.hero-scroll {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
@@ -104,22 +103,27 @@ margin-right: auto;
   border: 1px solid var(--text-light-color);
   border-radius: 10px;
   min-width: 163px;
-  height: 53px;
-  padding: 15px 69px 20px 16px;
-  
+  height: 53px; 
+  padding-top: 15px;
+  padding-bottom: 20px;
+  padding-left: 16px;
 }
 .hero-scroll-icon {
-    background-color: var(--white-color);
+    background-color: var(--text-light-color);
     border-radius: 50%;
     color: var(--accent-color);
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 28px;
+    height: 28px;
+    margin-left: 12px;
   }
 
 .hero-icon {
   fill: var(--accent-color);
-}
+  padding: 0;
+} 
 
 /* TABLET */
 @media screen and (min-width: 768px) {
