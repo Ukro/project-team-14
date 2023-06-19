@@ -84,7 +84,9 @@
     .top-image {
         width: 344px;  
     }
-    
+    .top-item{
+        order: -2;
+    }
 
     .top-wrp {
         display: flex;
@@ -103,6 +105,7 @@
 
     .top-mrgn {
         margin: unset;
+        order: -1;
     }
 
     .top-btn {
