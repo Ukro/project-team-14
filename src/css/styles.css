@@ -43,11 +43,13 @@
   --accent-color: #fd9222;
   --hover-accent-color: #fcf1e0;
   --bg-dark-color: #1e1823;
-  --bg-light-color: D#E2E2E2;
+  --bg-light-color: #E2E2E2;
+  --main-bg-color: #fafafa;
   --text-font-size: 14px;
   --title-font-size: 24px;
   --text-font-weight: 400;
   --title-font-weight: 600;
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
