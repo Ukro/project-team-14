@@ -57,29 +57,29 @@ height: 41px;
 }
 .hero-btn-buy:hover,
 .hero-btn-buy:focus {
-  background-color: var(--hover-accent-color);
-  color: var(--accent-color);
+ background-color: var(--hover-accent-color);
+ color: var(--accent-color);
 } 
 
 .hero-btn-how {
-  min-width: 159px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  color: var(--text-light-color);
-  background-color: transparent;
-  border: 1px solid var(--text-light-color);
-border-radius: 100px;
-padding: 12px 28px;
-height: 41px;
+ min-width: 159px;
+ font-family: 'Montserrat';
+ font-style: normal;
+ font-weight: 600;
+ font-size: 14px;
+ line-height: 17px;
+ color: var(--text-light-color);
+ background-color: transparent;
+ border: 1px solid var(--text-light-color);
+ border-radius: 100px;
+ padding: 12px 28px;
+ height: 41px;
 }
 
 .hero-btn-how:hover,
 .hero-btn-how:focus {
-  border: 1px solid var(--accent-color);
-  color: var(--accent-color);
+ border: 1px solid var(--accent-color);
+ color: var(--accent-color);
 } 
 
 .hero-btn-container {
@@ -87,9 +87,10 @@ height: 41px;
   flex-direction: raw;
   flex-wrap: wrap;
   justify-content: start;
-  /* align-items: center; */
+  align-items: center;
   column-gap: 14px;
   row-gap: 32px;
+  margin-bottom: 20px;
 } 
 .hero-scroll {
   font-family: 'Montserrat';
@@ -100,13 +101,13 @@ height: 41px;
   letter-spacing: -0.03em;
   color: var(--text-light-color);
   background-color: transparent;
-  border: 1px solid var(--text-light-color);
+  border: transparent;
   border-radius: 10px;
-  min-width: 163px;
-  height: 53px; 
-  padding-top: 15px;
-  padding-bottom: 20px;
-  padding-left: 16px;
+  min-width: 107px;
+  display: flex;
+  text-align: start;
+  justify-content: center;
+  align-items: center;
 }
 .hero-scroll-icon {
     background-color: var(--text-light-color);
@@ -117,12 +118,11 @@ height: 41px;
     align-items: center;
     width: 28px;
     height: 28px;
-    margin-left: 12px;
-  }
+    margin-left: 12px;  
+    }
 
 .hero-icon {
   fill: var(--accent-color);
-  padding: 0;
 } 
 
 /* TABLET */
