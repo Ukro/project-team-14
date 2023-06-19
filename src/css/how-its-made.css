@@ -50,9 +50,14 @@
   /* or 129% */
 
   letter-spacing: -0.02em;
+  list-style: disc;
 
   color: #111111;
   padding-top: 18px;
+}
+
+.how-li::after {
+  background-image: url('/img/icons.svg#icon-how_point');
 }
 
 .how-paragraph {
@@ -100,11 +105,9 @@
 .how-ul {
   display: flex;
   flex-direction: column;
+  list-style: none;
+  padding-left: 0;
   /* row-gap: 20px; */
-}
-
-.how-li::marker {
-  content: url(./img/icons.svg#icon-how_point);
 }
 
 .how-main-blocks {
