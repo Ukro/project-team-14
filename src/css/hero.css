@@ -25,7 +25,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  
 }
 
 .hero-text {
@@ -220,9 +219,9 @@ screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     height: 600px;
     padding-top: 381px;
 }
-}
 .hero-btn-how {
   margin-right: 585px;
   }
+}
 
 
