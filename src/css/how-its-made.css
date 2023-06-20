@@ -134,6 +134,25 @@
   height: 100%;
 }
 
+@media screen and (max-width: 374px) {
+  .how-li {
+    width: auto;
+  }
+  .how-paragraph {
+    width: auto;
+  }
+  .how-blocks {
+    width: auto;
+  }
+  .how-picture {
+    width: auto;
+  }
+
+  .how-main-blocks {
+    width: auto;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .how-main-blocks {
     width: 614px;
