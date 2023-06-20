@@ -32,8 +32,8 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
     
-    <script type="module" crossorigin src="/project-team-14/assets/index-511099ff.js"></script>
-    <link rel="stylesheet" href="/project-team-14/assets/index-c2a4568a.css">
+    <script type="module" crossorigin src="/project-team-14/assets/index-23c33849.js"></script>
+    <link rel="stylesheet" href="/project-team-14/assets/index-dd5464c8.css">
   </head>
   <body>
     <!-- Kate -->
@@ -591,16 +591,22 @@
         </div>
       </li>
     </ul>
-    <button class="review-send-btn">Leave a review</button>
+    <button class="review-send-btn" data-reviews-modal-open>
+      Leave a review
+    </button>
   </div>
 </section>
 <!-- =========== Backdrop start ==========  -->
 <!-- class="backdrop is-hidden" -->
 
-<div class="backdrop is-hidden" data-modal>
-  <div class="modal">
-    <button type="button" class="modal-close-btn" data-modal-close>
-      <svg class="modal-close-icon" width="28" height="28" fill="none">
+<div class="reviews-backdrop is-hidden" data-reviews-modal>
+  <div class="reviews-modal">
+    <button
+      type="button"
+      class="reviews-modal-close-btn"
+      data-reviews-modal-close
+    >
+      <svg class="reviews-modal-close-icon" width="28" height="28" fill="none">
         <path
           stroke="#111111"
           stroke-linecap="round"
@@ -669,9 +675,7 @@
         ></textarea>
       </div>
 
-      <button type="button" class="reviews-modal-button" data-modal-open>
-        Send
-      </button>
+      <button type="button" class="reviews-modal-button">Send</button>
     </form>
   </div>
 </div>
