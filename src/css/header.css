@@ -306,6 +306,10 @@
     transition: color var(--transition);
   }
 
+  /* .current-page-color {
+    color: var(--accent-color);
+  } */
+
   .header-nav-item {
     position: relative;
   }
