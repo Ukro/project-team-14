@@ -4,7 +4,9 @@
 @media screen and (max-width: 767px) {
     .hero-section {
         background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url('../img/hero-img/mobile-chocolate-covered-cocoa-powder.jpg');
-    } 
+        border-radius: 50px;
+        overflow: hidden;
+      } 
   }
   
   @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), 
@@ -12,7 +14,9 @@
   screen and (min-resolution: 2dppx) and (max-width: 767px) {
     .hero-section {
     background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url('../img/hero-img/mobile-chocolate-covered-cocoa-powder@2x.jpg');
-    }
+    border-radius: 50px;
+        overflow: hidden;
+  }
   }
 
 .hero-section {
@@ -21,7 +25,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  
 }
 
 .hero-text {
@@ -31,15 +34,16 @@ font-weight: 500;
 font-size: 20px;
 line-height: 1.20;
 letter-spacing: -0.03em;
-color: #FFFFFF;
+color: var(--text-light-color);
 text-align: start;
-
+width: 295px;
+margin-bottom: 32px;
 }
 
 .hero-btn-buy {
 min-width: 120px;
-color: #FFFFFF;
-background-color: #FD9222;
+color: var(--text-light-color);
+background-color: var(--accent-color);
 border-radius: 100px;
 border: none;
 font-family: 'Montserrat';
@@ -49,67 +53,175 @@ font-size: 14px;
 line-height: 17px;
 padding: 12px 28px;
 height: 41px;
-margin-left: auto;
-margin-right: auto;
 }
 .hero-btn-buy:hover,
 .hero-btn-buy:focus {
-  background-color: #FCF1E0;
-  color: #FD9222;
+ background-color: var(--hover-accent-color);
+ color: var(--accent-color);
 } 
 
 .hero-btn-how {
-  min-width: 159px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  color: #FFFFFF;
-  background-color: transparent;
-  border: 1px solid #FFFFFF;
-border-radius: 100px;
-padding: 12px 28px;
-height: 41px;
-margin-left: auto;
-margin-right: auto;
+ min-width: 159px;
+ font-family: 'Montserrat';
+ font-style: normal;
+ font-weight: 600;
+ font-size: 14px;
+ line-height: 17px;
+ color: var(--text-light-color);
+ background-color: transparent;
+ border: 1px solid var(--text-light-color);
+ border-radius: 100px;
+ padding: 12px 28px;
+ height: 41px;
 }
+
 .hero-btn-how:hover,
 .hero-btn-how:focus {
-  border: 1px solid #FD9222;
-  color: #FD9222;
+ border: 1px solid var(--accent-color);
+ color: var(--accent-color);
 } 
 
-.hero-btn-scroll {
-  border-radius: 10px;
+.hero-btn-container {
+  display: flex;
+  flex-direction: raw;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  column-gap: 14px;
+  row-gap: 32px;
+  margin-bottom: 20px;
+} 
+.hero-scroll {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.17px;
   letter-spacing: -0.03em;
-  color: #FFFFFF;
+  color: var(--text-light-color);
   background-color: transparent;
+  border: transparent;
+  border-radius: 10px;
+  min-width: 107px;
+  display: flex;
+  text-align: start;
+  justify-content: center;
+  align-items: center;
+}
+.hero-scroll-icon {
+    background-color: var(--text-light-color);
+    border-radius: 50%;
+    color: var(--accent-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    margin-left: 12px;  
+    }
+
+.hero-icon {
+  fill: var(--accent-color);
+  width: 16px; 
+  height: 16px;
+} 
+.hero-scroll-icon:hover,
+.hero-scroll-icon:focus {
+  background-color: var(--accent-color);
+}
+.hero-icon:hover,
+.hero-icon:focus {
+  fill: var(--text-light-color);
+}
+.hero-scroll:hover,
+.hero-scroll:focus {
+color: var(--accent-color);
 }
 
 /* TABLET */
 @media screen and (min-width: 768px) {
   .hero-section {
       background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url('../img/hero-img/tablet-chocolate-covered-cocoa-powder.jpg');
-  } 
+      border-radius: 50px;
+      overflow: hidden;
+    } 
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
 screen and (min-resolution: 192dpi) and (min-width: 768px),
 screen and (min-resolution: 2dppx) and (min-width: 768px) {
  .hero-section {
+  border-radius: 50px;
+  overflow: hidden;
   background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url('../img/hero-img/tablet-chocolate-covered-cocoa-powder@2x.jpg');
 }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1157px) {
+@media screen and (min-width: 768px) {
   .hero-section {
     height: 890px;
     padding-top: 671px;
 }
+.hero-text {
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  width: 484px;
+  }
+  .hero-btn-buy {
+    min-width: 144px;
+    padding: 14px 40px;
+    height: 45px;
+    }
+    .hero-btn-how {
+    min-width: 183px;
+    padding: 14px 40px;
+    height: 45px;
+    margin-right: 153px;
+    }
+    .hero-scroll {
+      font-size: 14px;
+      line-height: 1.29px;
+    }
+    .hero-icon {
+      width: 22px; 
+      height: 22px;
+    } 
+    .hero-scroll-icon {
+      width: 38px;
+      height: 38px;
+      margin-left: 14px;  
+      }
+      .hero-btn-container {
+        margin-bottom: 40px;
+      } 
 }
+
+/* DESCTOP */
+
+@media screen and (min-width: 1200px) {
+  .hero-section {
+      background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url('../img/hero-img/desc-chocolate-covered-cocoa-powder.jpg');
+    } 
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+screen and (min-resolution: 192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+ .hero-section {
+  background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%), url('../img/hero-img/desc-chocolate-covered-cocoa-powder@2x.jpg');
+}
+}
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    height: 600px;
+    padding-top: 381px;
+}
+.hero-btn-how {
+  margin-right: 585px;
+  }
+}
+
+
