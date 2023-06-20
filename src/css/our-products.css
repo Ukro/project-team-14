@@ -1,4 +1,11 @@
-@media screen and (max-width:767px) {
+ @media screen and (max-width:375px) {
+  .our-products-container{
+   max-width: 375px;
+    
+  }
+} 
+
+@media screen and (min-width:376px) and (max-width:767px) {
     .our-products-container{
      width: 375px;
      margin-left: auto;
