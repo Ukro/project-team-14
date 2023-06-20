@@ -98,8 +98,8 @@
 .how-section {
   margin-bottom: 72px;
   align-items: center;
-  margin-left: 20px;
-  margin-right: 20px;
+  /* margin-left: 20px; */
+  /* margin-right: 20px; */
 }
 
 .how-ul {
