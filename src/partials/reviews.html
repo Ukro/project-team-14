@@ -1,1 +1,157 @@
-<section>reviews</section>
+<section class="reviews-section">
+  <div class="reviews-container">
+    <h2 class="reviews-section-title">
+      chocolate<span class="reviews-section-title-span"> is loved</span>
+    </h2>
+    <ul class="reviewers">
+      <li class="reviewers-list">
+        <div class="reviewer-container">
+          <img
+            class="ellipse"
+            srcset="
+              ./img/reviews/Victoria-Dobrzhanska.jpg    1x,
+              ./img/reviews/Victoria-Dobrzhanska@2x.jpg 2x
+            "
+            src="./img/reviews/Victoria-Dobrzhanska.jpg"
+            alt="Victoria Dobrzhanska"
+            width="80"
+            height="80"
+          />
+          <h3 class="reviewer-name">Victoria Dobrzhanska</h3>
+          <p class="reviewer-text">
+            I love this chocolate bar. Perfect combination of light crispy
+            wafer, covered in a thin layer chocolate.
+          </p>
+        </div>
+      </li>
+      <li class="reviewers-list tablet-2">
+        <div class="reviewer-container">
+          <img
+            class="ellipse"
+            srcset="
+              ./img/reviews/Nazar-Babenko.jpg    1x,
+              ./img/reviews/Nazar-Babenko@2x.jpg 2x
+            "
+            src="./img/reviews/Nazar-Babenko.jpg"
+            alt="Nazar Babenko"
+            width="80"
+            height="80"
+          />
+          <h3 class="reviewer-name">Nazar Babenko</h3>
+          <p class="reviewer-text">
+            This chocolate confection is a delight! A delight! The wafer is
+            light and crisp, the hazelnut cream is smooth, and the chocolate is
+            good.
+          </p>
+        </div>
+      </li>
+      <li class="reviewers-list tablet-3">
+        <div class="reviewer-container">
+          <img
+            class="ellipse"
+            srcset="
+              ./img/reviews/Olena-Kampusch.jpg    1x,
+              ./img/reviews/Olena-Kampusch@2x.jpg 2x
+            "
+            src="./img/reviews/Olena-Kampusch.jpg"
+            alt="Olena Kampusch"
+            width="80"
+            height="80"
+          />
+          <h3 class="reviewer-name">Olena Kampusch</h3>
+          <p class="reviewer-text">
+            Chocolate is a family favourite treat. Love the delicious smooth
+            chocolate and the creaminess inside. The wafer is soft but crunchy.
+          </p>
+        </div>
+      </li>
+    </ul>
+    <button type="button" class="review-send-btn" data-reviews-modal-open>
+      Leave a review
+    </button>
+  </div>
+</section>
+<!-- =========== Reviews Backdrop start ==========  -->
+<!-- class="backdrop is-hidden" -->
+
+<div class="reviews-backdrop is-hidden" data-reviews-modal>
+  <div class="reviews-modal">
+    <button
+      type="button"
+      class="reviews-modal-close-btn"
+      data-reviews-modal-close
+    >
+      <svg class="reviews-modal-close-icon" width="28" height="28" fill="none">
+        <path
+          stroke="#111111"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M21 7 7 21M7 7l14 14"
+        />
+      </svg>
+    </button>
+    <p class="form-title">
+      Leave a review about
+      <span class="reviews-section-modal-title-span"> our chocolate</span>
+    </p>
+    <form class="contact-form">
+      <div class="form-wrapper">
+        <div class="input-wrapper">
+          <input
+            class="form-input"
+            type="text"
+            id="user-name"
+            name="user-name"
+            placeholder="Name"
+          />
+        </div>
+
+        <div class="input-wrapper">
+          <input
+            class="form-input"
+            type="email"
+            id="user-email"
+            name="user-email"
+            placeholder="Email"
+          />
+        </div>
+
+        <div class="input-wrapper">
+          <input
+            class="form-input"
+            type="tel"
+            id="user-phone"
+            name="user-phone"
+            placeholder="<span>+380</span>  | Phone number"
+          />
+          <svg class="modal-ukr-flag" width="32" height="32" fill="none">
+            <g clip-path="url(#a)">
+              <path fill="gold" d="M31.832 5.058H.242v23.509h31.59V5.058Z" />
+              <path
+                fill="#0057B7"
+                fill-rule="evenodd"
+                d="M.243 5.058h31.589v11.754H.242V5.058Z"
+                clip-rule="evenodd"
+              />
+            </g>
+            <defs>
+              <clipPath id="a">
+                <path fill="#fff" d="M0 4.8h32v24H0z" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <textarea
+          class="textarea"
+          name="user-comment"
+          id="user-comment"
+          placeholder="Enter text"
+        ></textarea>
+      </div>
+
+      <button type="button" class="reviews-modal-button">Send</button>
+    </form>
+  </div>
+</div>
+<!-- <script src="./js/leave-a-review-about-our-chocolate"></script> -->
