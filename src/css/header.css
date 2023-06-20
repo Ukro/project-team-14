@@ -1,3 +1,15 @@
+@keyframes menu {
+  from {
+    transform: translateX(100px);
+  }
+
+  to {
+    transform: translateX(-100px);
+  }
+}
+
+
+
 .header {
   background-color: var(--main-bg-color);
 }
@@ -198,6 +210,16 @@
   }
 }
 
+@media screen and (min-width: 375px) {
+  .mobile-container {
+    padding: 0;
+    max-width: 415px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+}
+
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -220,6 +242,13 @@
     width: 24px;
     height: 16px;
   }
+
+    .mobile-container {
+      padding: 0;
+      max-width: 804px;
+      margin-right: auto;
+      margin-left: auto;
+    }
 
   .mobile-close-btn {
     width: 32px;
