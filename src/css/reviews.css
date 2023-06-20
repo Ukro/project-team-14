@@ -233,7 +233,6 @@ img {
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
   border-radius: 13px;
-  margin-bottom: 18px;
 }
 
 .input-wrapper {
@@ -256,17 +255,21 @@ img {
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   border-radius: 8px;
   height: 45px;
+  align-items: center;
+  text-align: center;
 }
 .flag {
   display: flex;
   column-gap: 8px;
   width: 95px;
-  height: 45px;
+  height: 32px;
   align-items: center;
   text-align: center;
   padding-left: 18px;
   padding-right: 8px;
-  border-right: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-right: 2.5px solid rgba(17, 17, 17, 0.05);
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 .phone-code {
   font-family: 'Montserrat';
@@ -288,6 +291,7 @@ img {
   line-height: 22px;
   display: flex;
   align-items: center;
+  text-align: center;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
 }
