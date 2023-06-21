@@ -267,7 +267,7 @@ img {
   text-align: center;
   padding-left: 18px;
   padding-right: 8px;
-  border-right: 2.5px solid rgba(17, 17, 17, 0.05);
+  border-right: 2px solid rgba(17, 17, 17, 0.05);
   padding-top: 8px;
   padding-bottom: 8px;
 }
@@ -280,7 +280,7 @@ img {
   letter-spacing: -0.02em;
   color: #000000;
 }
-.phone-input {
+.reviews-phone-input {
   border: transparent;
 }
 .placeholder {
