@@ -32,8 +32,8 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
     
-    <script type="module" crossorigin src="/project-team-14/assets/index-7dc63bb4.js"></script>
-    <link rel="stylesheet" href="/project-team-14/assets/index-0937bf5c.css">
+    <script type="module" crossorigin src="/project-team-14/assets/index-78b69b5b.js"></script>
+    <link rel="stylesheet" href="/project-team-14/assets/index-e82a6c36.css">
   </head>
   <body>
     <!-- Kate -->
@@ -631,7 +631,7 @@
             </li>   
             <li class="top-item-btn">
             <div class="top-button">
-                <button type="submit" class="top-btn">Buy now</button>
+                <button type="button" class="top-btn" data-buy-modal-open>Buy now</button>
             </div>
             </li>
         </ul>
@@ -894,14 +894,14 @@
 
 
 
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-buy-modal>
     <div class="modal-buy-now">
-        <button type="button" class="modal-close-btn" data-modal-close>
+        <button type="button" class="modal-close-btn" data-buy-modal-close>
             <svg class="modal-close-icon" >
               <use href="/project-team-14/assets/icons-c5ac02f0.svg#icon-close-icon"></use>
             </svg>
           </button>
-        <h1 class="buy-now-hero-text">BUY <span class="buy-now-text-second">NOW</span></h1>
+        <h2 class="buy-now-hero-text">BUY <span class="buy-now-text-second">NOW</span></h2>
         <div class="buy-now-product">
             <ul class="buy-product-list list">
                 <li class="buy-nov-product-item">
@@ -939,9 +939,9 @@
                 </li>
             </ul>
         </div>
-        <form action="" class="contact-form">
+        <form class="contact-form">
             <div class="form-wrapper">
-                <label for="user name" class="contact-form-field-wrapper">
+                <label for="user-name" class="contact-form-field-wrapper">
                 <span class="input-text">Personal information</span>
                 </label>
                 <div class="contact-form-input">
@@ -993,29 +993,28 @@
                     class="form-input"
                     id="user-phone"
                     type="tel"
-                    name="phone_number"
+                    name="phone-number"
                     required
                     pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
                     title="xxx-xxx-xx-xx"
                     placeholder="Phone number"
                    />
                 </div>
-                </label>
             </div>
             <div class="form-wrapper">
-                    <label for="card number" class="contact-form-field-wrapper">
+                    <label for="card-number" class="contact-form-field-wrapper">
                     <span class="input-text">Card number</span>
                     </label>
                     <div class="contact-form-input">
                         <input
                         class="form-input"
-                        id="card number"
-                        type="card number"
-                        name="card number"
+                        id="card-number"
+                        type="tel"
+                        name="card-number"
                         required
                         title="xxxx xxxx xxxx xxxx"
-                        pattern="([0-9])"
-                        placeholder="Enter card"
+                        pattern="[0-9]"
+                        placeholder="Enter card" maxlength="19" 
                       />
                       <svg class="card-icon" width="32" height="21">
                         <use href="/project-team-14/assets/icons-c5ac02f0.svg#"></use>
