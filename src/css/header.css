@@ -98,6 +98,9 @@
   visibility: hidden;
   pointer-events: none;
   z-index: 100;
+
+  transform: translate(100%);
+  transition: transform var(--transition);
 }
 
 .mobile-wrapper {
@@ -113,6 +116,9 @@
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+
+  transform: translate(0);
+  transition: transform var(--transition);
 }
 
 .mobile-close-btn {
@@ -284,7 +290,7 @@
 
   .header-nav-menu {
     display: flex;
-    gap: 24px;
+    gap: 23px;
   }
 
   .header-app-menu {
