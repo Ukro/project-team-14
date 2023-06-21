@@ -102,12 +102,11 @@
 
   .current::after {
     content: '';
-    position: absolute;
+    /* position: absolute; */
     width: 124px;
     border: 1px solid rgba(255, 255, 255, 0.5);
     color: #fd9222;
-    display: block;
+    display: inline;
     transform: rotate(90deg);
-    justify-content: space-around;
   }
 }
