@@ -41,6 +41,9 @@
   }
 }
 
+.hero {
+  padding-bottom: 72px;
+}
 .hero-section {
   background-color: var(bg-dark-color);
   height: 620px;
@@ -48,7 +51,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin-bottom: 72px;
 }
 
 .hero-text {
@@ -188,10 +190,13 @@
 }
 
 @media screen and (min-width: 768px) {
+  .hero {
+    padding-bottom: 50px;
+  }
   .hero-section {
     height: 890px;
     padding-top: 671px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
   }
   .hero-text {
     font-weight: 500;
@@ -254,10 +259,13 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .hero {
+    padding-bottom: 72px;
+  }
   .hero-section {
     height: 600px;
     padding-top: 381px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
   }
   .hero-btn-how {
     margin-right: 585px;
