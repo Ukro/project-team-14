@@ -1,10 +1,6 @@
-.advantages {
+.advantages-section {
   background-color: var(--bg-dark-color);
   height: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .visually-hidden {
@@ -19,6 +15,11 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.advantages-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .advantages-title-text {
   /* font-family: 'Montserrat'; */
   font-style: normal;
@@ -26,6 +27,7 @@
   font-size: 18px;
   line-height: 1.22;
   text-align: start;
+  letter-spacing: 0.01em;
   color: var(--text-light-color);
   margin-bottom: 18px;
 }
@@ -55,13 +57,57 @@
   margin-bottom: 22px;
 }
 .advantages-container-item {
-  display: block;
-  margin-bottom: 16px;
+  /* display: block; */
 }
 
 .advantages-container-list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  column-gap: 20px;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-container-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  .advantages-container-item {
+    display: block;
+    height: 100%;
+    /* width: calc((100%-96px) / 3); */
+    max-width: 336px;
+  }
+  .advantages-descr-text {
+    max-width: 308px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages-container-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+  }
+  .advantages-container-item {
+    display: block;
+    height: 100%;
+    /* width: calc((100%-96px) / 3); */
+    max-width: 336px;
+  }
+  .advantages-descr-text {
+  }
+
+  .current::after {
+    content: '';
+    position: absolute;
+    width: 124px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: #fd9222;
+    display: block;
+    transform: rotate(90deg);
+    justify-content: space-around;
+  }
 }
