@@ -211,12 +211,12 @@
 }
 
 @media screen and (min-width: 375px) {
-  .mobile-container {
+  /* .mobile-container {
     padding: 0;
     max-width: 415px;
     margin-right: auto;
     margin-left: auto;
-  }
+  } */
   
 }
 
@@ -243,12 +243,12 @@
     height: 16px;
   }
 
-    .mobile-container {
+    /* .mobile-container {
       padding: 0;
       max-width: 804px;
       margin-right: auto;
       margin-left: auto;
-    }
+    } */
 
   .mobile-close-btn {
     width: 32px;
@@ -353,7 +353,7 @@
     position: absolute;
     bottom: -8px;
     left: 0;
-    width: 24px;
+    width: 100%;
     height: 1px;
     border: 1px solid #fd9222;
     opacity: 0;
