@@ -3,7 +3,8 @@
   background-image: url(../img/subscribe/subcribe-mobile-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 370px;
+  padding-top: 72px;
+  padding-bottom: 72px;
 }
 .subscribe-header {
   font-family: var(--main-font-family);
@@ -12,7 +13,6 @@
   margin-right: auto;
   margin-bottom: 24px;
   text-align: center;
-  padding-top: 72px;
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: -0.03em;
@@ -45,6 +45,7 @@
   padding: 14px 40px;
   display: block;
   margin: 0 auto 0 auto;
+  transition: background-color var(--transition), color var (--transition);
 }
 .subscribe-btn:hover,
 .subscribe-btn:focus {
@@ -83,11 +84,14 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .subscribe {
+    padding-top: 62px;
+    padding-bottom: 63px;
+  }
   .subscribe-header {
     font-size: 20px;
     line-height: 1.2;
     max-width: 291px;
-    padding-top: 62px;
   }
   .subscribe-text {
     max-width: 326px;
