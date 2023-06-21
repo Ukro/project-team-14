@@ -1,5 +1,7 @@
 .foot-section {
 background-color: var(--bg-dark-color);
+padding-top: 32px;
+padding-bottom: 32px;
 }
 
 
@@ -25,17 +27,7 @@ background-color: var(--bg-dark-color);
     color: var(--accent-color);
 }
 
-.foot-contacts {
 
-}
-
-/* .foot-contacts::after {
-    content: '';
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    width: 100%;
-    display: block;
-    margin-right: 20px;
-} */
 
 .foot-contacts-title {
     font-style: normal;
@@ -59,14 +51,12 @@ background-color: var(--bg-dark-color);
 
 .foot-address-list-li {
     margin-bottom: 4px;
-
 }
 
 
 .foot-contacts-social-list {
     display: flex;
     gap: 17px;
-
 }
 
 .foot-contuct-us-icon {
@@ -75,35 +65,12 @@ background-color: var(--bg-dark-color);
     justify-content: space-between;
 }
 
-.social-svg {
-    
-    
-}
 
-
-/* .social-svg-link-twitter {
-    fill: transparent;
-    stroke: vavar(--text-light-color);
-    
-} */
 
 .social-svg-link {
-    fill: currentColor;
-    
-    
+    fill: currentColor;  
 }
 
-
-
-
-
-
-
-
-
-.foot-map-site {
-    padding-bottom: 32px;
-}
 
 .foot-map-site::before {
     content: '';
@@ -122,7 +89,6 @@ background-color: var(--bg-dark-color);
     font-size: 14px;
     line-height: 16px;
     margin-top: 32px;
-
 }
 
 .foot-map-site-list-link:hover {
@@ -134,22 +100,22 @@ background-color: var(--bg-dark-color);
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     
+    .foot-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 
     .foot-title {
         width: 300px;
         margin-bottom: 0;
         margin-right: 0;
-        padding-top: 0;
-        margin-top: 50px;
-        
+        padding-top: 0;  
     }
 
     .foot-tablet-title-contacts {
         display: flex;
         flex-direction: row;
         gap: 124px;
-        
-
     }
 
     
@@ -164,13 +130,7 @@ background-color: var(--bg-dark-color);
         gap: 24px;
     }
 
-    .foot-map-site {
-        padding-bottom: 50px;
-    }
-
-    .foot-contacts-container {
-        margin-top: 50px;
-    }
+   
 }
 
 
@@ -178,13 +138,16 @@ background-color: var(--bg-dark-color);
 
 @media screen and (min-width: 1200px) {
 
+    .foot-section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
     .foot-title {
         width: 303px;
         margin-bottom: 0;
         margin-right: 0;
-        padding-top: 0;
-        margin-top: 50px;
-        
+        padding-top: 0;  
     }
 
     .foot-title-text {
@@ -199,8 +162,6 @@ background-color: var(--bg-dark-color);
         display: flex;
         flex-direction: row;
         gap: 543px;
-        
-
     }
 
     
@@ -215,13 +176,8 @@ background-color: var(--bg-dark-color);
         gap: 24px;
     }
 
-    .foot-map-site {
-        padding-bottom: 50px;
-    }
-
-    .foot-contacts-container {
-        margin-top: 50px;
-    }
+   
+   
 
     .foot-map-site-list-link:hover {
         color: var(--accent-color);
@@ -235,7 +191,4 @@ background-color: var(--bg-dark-color);
         
     }
 
-    
-
-   
 }

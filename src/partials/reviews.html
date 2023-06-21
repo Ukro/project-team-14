@@ -101,7 +101,7 @@
           <input
             class="form-input"
             type="text"
-            id="user-name"
+            id="reviews-modal-user-name"
             name="user-name"
             placeholder="Name"
           />
@@ -111,41 +111,41 @@
           <input
             class="form-input"
             type="email"
-            id="user-email"
+            id="reviews-modal-user-email"
             name="user-email"
             placeholder="Email"
           />
         </div>
 
         <div class="input-wrapper">
-          <input
-            class="form-input"
-            type="tel"
-            id="user-phone"
-            name="user-phone"
-            placeholder="<span>+380</span>  | Phone number"
-          />
-          <svg class="modal-ukr-flag" width="32" height="32" fill="none">
-            <g clip-path="url(#a)">
-              <path fill="gold" d="M31.832 5.058H.242v23.509h31.59V5.058Z" />
-              <path
-                fill="#0057B7"
-                fill-rule="evenodd"
-                d="M.243 5.058h31.589v11.754H.242V5.058Z"
-                clip-rule="evenodd"
-              />
-            </g>
-            <defs>
-              <clipPath id="a">
-                <path fill="#fff" d="M0 4.8h32v24H0z" />
-              </clipPath>
-            </defs>
-          </svg>
+          <div class="flag-wrapper">
+            <div class="flag">
+              <svg class="modal-ukr-flag" width="32" height="32" fill="none">
+                <path fill="gold" d="M31.832 5.058H.242v23.509h31.59V5.058Z" />
+                <path
+                  fill="#0057B7"
+                  fill-rule="evenodd"
+                  d="M.243
+            5.058h31.589v11.754H.242V5.058Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <p class="phone-code">+380</p>
+            </div>
+            <input
+              class="form-input reviews-phone-input"
+              type="tel"
+              id="reviews-modal-user-phone"
+              name="user-phone"
+              placeholder="Phone number"
+            />
+          </div>
         </div>
+
         <textarea
           class="textarea"
           name="user-comment"
-          id="user-comment"
+          id="reviews-user-comment"
           placeholder="Enter text"
         ></textarea>
       </div>
