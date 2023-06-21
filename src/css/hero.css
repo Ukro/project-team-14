@@ -13,17 +13,44 @@
 
 /* MOBILE */
 
-@media screen and (max-width: 767px) {
-  .hero-section {
-    background-image: linear-gradient(
-        180deg,
-        rgba(17, 17, 17, 0) 0%,
-        rgba(17, 17, 17, 0.4) 100%
-      ),
-      url('../img/hero-img/mobile-chocolate-covered-cocoa-powder.jpg');
-    border-radius: 30px;
-    overflow: hidden;
+@media screen and (max-width: 374px) {
+  .hero-container {
+    margin: 0 auto;
+    padding: 0 10px;
   }
+}
+
+@media screen and (min-width: 375px) {
+  .hero-container {
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .hero-section {
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 375px) {
+  .hero-section {
+    background-size: contain;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero {
+    padding-bottom: 72px;
+  }
+}
+.hero-section {
+  padding-top: 395px;
+  padding-bottom: 20px;
+  background-image: linear-gradient(rgba(17, 17, 17, 0), rgba(17, 17, 17, 0.4)),
+    url('../img/hero-img/mobile-chocolate-covered-cocoa-powder.jpg');
+  max-width: 335px;
+  border-radius: 30px;
+  overflow: hidden;
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
@@ -41,13 +68,9 @@
   }
 }
 
-.hero {
-  padding-bottom: 72px;
-}
 .hero-section {
   background-color: var(bg-dark-color);
   height: 620px;
-  padding-top: 395px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -59,8 +82,8 @@
   line-height: 1.2;
   letter-spacing: -0.03em;
   color: var(--text-light-color);
-  text-align: start;
-  width: 295px;
+  text-align: left;
+  max-width: 295px;
   margin-bottom: 32px;
 }
 
@@ -105,13 +128,11 @@
 
 .hero-btn-container {
   display: flex;
-  /* flex-direction: raw; */
   flex-wrap: wrap;
   justify-content: start;
   align-items: center;
   column-gap: 14px;
   row-gap: 32px;
-  margin-bottom: 20px;
 }
 .hero-scroll {
   font-weight: 500;
@@ -161,8 +182,21 @@
 }
 
 /* TABLET */
+
+@media screen and (min-width: 768px) {
+  .hero-container {
+    width: 768px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero-section {
+    height: 890px;
+    padding-top: 671px;
+    padding-bottom: 40px;
+    max-width: 704px;
     background-image: linear-gradient(
         180deg,
         rgba(17, 17, 17, 0) 0%,
@@ -190,19 +224,21 @@
 }
 
 @media screen and (min-width: 768px) {
+  .hero-btn-container {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+  }
+
   .hero {
     padding-bottom: 50px;
   }
-  .hero-section {
-    height: 890px;
-    padding-top: 671px;
-    /* margin-bottom: 50px; */
-  }
+
   .hero-text {
     font-weight: 500;
     font-size: 28px;
     line-height: 1.21;
-    width: 484px;
+    max-width: 484px;
   }
   .hero-btn-buy {
     min-width: 144px;
@@ -213,7 +249,7 @@
     min-width: 183px;
     padding: 14px 40px;
     height: 45px;
-    margin-right: 153px;
+    margin-right: 139px;
   }
   .hero-scroll {
     font-size: 14px;
@@ -228,15 +264,27 @@
     height: 38px;
     margin-left: 14px;
   }
-  .hero-btn-container {
-    margin-bottom: 40px;
-  }
 }
 
 /* DESCTOP */
 
 @media screen and (min-width: 1200px) {
+  .hero-container {
+    width: 1200px;
+  }
+  .hero {
+    padding-bottom: 72px;
+  }
+  .hero-btn-how {
+    margin-right: 571px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .hero-section {
+    height: 600px;
+    padding-top: 381px;
+    max-width: 1136px;
     background-image: linear-gradient(
         180deg,
         rgba(17, 17, 17, 0) 0%,
@@ -256,18 +304,5 @@
         rgba(17, 17, 17, 0.4) 100%
       ),
       url('../img/hero-img/desc-chocolate-covered-cocoa-powder@2x.jpg');
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero {
-    padding-bottom: 72px;
-  }
-  .hero-section {
-    height: 600px;
-    padding-top: 381px;
-    /* margin-bottom: 50px; */
-  }
-  .hero-btn-how {
-    margin-right: 585px;
   }
 }
