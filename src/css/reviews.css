@@ -1,6 +1,6 @@
 .reviews-section {
   background-color: #fafafa;
-  margin-bottom: 72px;
+  padding-bottom: 72px;
 }
 
 @media screen and (min-width: 375px) {
@@ -110,7 +110,7 @@ img {
 
 /* ========== Modal media ========== */
 @media screen and (max-width: 427px) {
-  .modal {
+  .reviews-modal {
     max-width: 100%;
   }
 }
@@ -132,6 +132,12 @@ img {
   }
   .tablet-3 {
     display: none;
+  }
+  .input-wrapper {
+    /* position: relative; */
+    /* max-width: 437px; */
+    height: 66px;
+    margin-bottom: 18px;
   }
 }
 
@@ -172,9 +178,10 @@ img {
   pointer-events: none;
 }
 .reviews-modal {
-  width: 512px;
-  min-height: 628px;
-  padding: 40px;
+  width: 95%;
+  max-width: 311px;
+
+  padding: 32px 24px;
 
   position: absolute;
   top: 50%;
@@ -186,8 +193,8 @@ img {
 }
 .reviews-modal-close-btn {
   position: absolute;
-  top: 24px;
-  right: 24px;
+  top: 14px;
+  right: 14px;
   width: 28px;
   height: 28px;
   border-radius: 50%;
@@ -208,15 +215,20 @@ img {
 }
 
 .form-title {
-  max-width: 298px;
+  max-width: 255px;
+  height: 48px;
+  left: 24px;
+  top: 32px;
+
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 20px;
+  line-height: 24px;
+  /* or 120% */
+
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  color: #111111;
   margin-bottom: 40px;
 }
 
@@ -242,12 +254,8 @@ img {
   margin-bottom: 18px;
 }
 .modal-ukr-flag {
-  /* position: absolute; */
-  /* top: 17px; */
-  /* bottom: 17px; */
-  /* left: 24px; */
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
 }
 
 .flag-wrapper {
@@ -261,15 +269,14 @@ img {
 .flag {
   display: flex;
   column-gap: 8px;
-  width: 95px;
-  height: 32px;
   align-items: center;
   text-align: center;
-  padding-left: 18px;
-  padding-right: 8px;
-  border-right: 2px solid rgba(17, 17, 17, 0.05);
   padding-top: 8px;
   padding-bottom: 8px;
+  padding-left: 18px;
+  padding-right: 8px;
+
+  border-right: 2px solid rgba(17, 17, 17, 0.05);
 }
 .phone-code {
   font-family: 'Montserrat';
@@ -318,10 +325,9 @@ img {
   color: #ffffff;
   width: 117px;
   height: 45px;
-  left: 40px;
-  top: 543px;
   outline: transparent;
   background: #fd9222;
   border-color: transparent;
   border-radius: 100px;
+  padding: 0;
 }
