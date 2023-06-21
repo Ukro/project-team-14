@@ -1,6 +1,10 @@
+/* ===============MOBILE=============== */
+
 .advantages-section {
   background-color: var(--bg-dark-color);
   height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .visually-hidden {
@@ -16,10 +20,6 @@
   overflow: hidden;
 }
 
-.advantages-container {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
 .advantages-title-text {
   font-style: normal;
   font-weight: 600;
@@ -55,9 +55,6 @@
   border: 1px solid rgba(255, 255, 255, 0.5);
   margin-bottom: 22px;
 }
-.advantages-container-item {
-  /* display: block; */
-}
 
 .advantages-container-list {
   display: flex;
@@ -65,8 +62,13 @@
   align-items: start;
   gap: 20px;
 }
+/* ===============TABLET=============== */
 
 @media screen and (min-width: 768px) {
+  .advantages-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
   .advantages-container-list {
     display: flex;
     flex-direction: row;
@@ -82,28 +84,33 @@
     max-width: 308px;
   }
 }
+
+/* ===============DESKTOP=============== */
+
 @media screen and (min-width: 1200px) {
   .advantages-container-list {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     position: relative;
+    gap: 70px;
   }
   .advantages-container-item {
+    position: relative;
     display: block;
     height: 100%;
     max-width: 336px;
   }
-  .advantages-descr-text {
-  }
 
   .current::after {
     content: '';
-    /* position: absolute; */
-    width: 124px;
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 124px;
     border: 1px solid rgba(255, 255, 255, 0.5);
-    color: #fd9222;
-    display: inline;
-    transform: rotate(90deg);
+    top: 50%;
+    transform: translateY(-50%);
+    right: -18px;
   }
 }
