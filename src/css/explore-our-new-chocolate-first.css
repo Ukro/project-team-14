@@ -9,6 +9,7 @@
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  transition: opacity var(--transition), visibility var(--transition);
 }
 .is-hidden {
   opacity: 0;
@@ -48,6 +49,7 @@
 }
 .subscribe-pop-up-close-icon {
   fill: var(--text-light-color);
+  transition: fill var(--transition);
 }
 .subscribe-pop-up-close-btn:hover .subscribe-pop-up-close-icon,
 .subscribe-pop-up-close-btn:focus .subscribe-pop-up-close-icon {
@@ -111,6 +113,7 @@
   font-size: 14px;
   line-height: 1.21;
   color: var(--text-light-color);
+  transition: background-color var(--transition), color var(--transition);
 }
 .subscribe-pop-up-btn:hover,
 .subscribe-pop-up-btn:focus {
