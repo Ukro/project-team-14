@@ -280,7 +280,7 @@ img {
   letter-spacing: -0.02em;
   color: #000000;
 }
-.reviews-phone-input {
+#reviews-modal-user-phone {
   border: transparent;
 }
 .placeholder {
