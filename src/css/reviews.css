@@ -186,6 +186,7 @@ img {
 }
 .reviews-modal-close-btn {
   position: absolute;
+  background-color: transparent;
   top: 14px;
   right: 14px;
   width: 28px;
@@ -242,10 +243,6 @@ img {
   height: 45px;
   margin-bottom: 18px;
 }
-.modal-ukr-flag {
-  width: 24px;
-  height: 24px;
-}
 
 .flag-wrapper {
   display: flex;
@@ -265,6 +262,13 @@ img {
   padding-left: 18px;
   padding-right: 8px;
   border-right: 2px solid rgba(17, 17, 17, 0.05);
+}
+.flag-ukraine {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
 }
 
 .phone-code {
