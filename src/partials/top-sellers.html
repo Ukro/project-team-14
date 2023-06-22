@@ -3,9 +3,10 @@
         <h2 class="top-title"> <span class="top-span">TOP</span> SELLERS</h2>
 
         <ul class="top-wrp list">
-            <li class="top-item top-frst">
+           <!--  <div class="top-con"> -->
+            <li class="top-item">
                 <div class="top-img">
-                    <picture>
+                    <picture class="top-pic">
                         <source srcset=" ./img/top-sellers/desktop/top-s3desk.jpg 1x,
                   ./img/top-sellers/desktop/top-s3desk-2x.jpg 2x" media="(min-width: 1200px)" />
 
@@ -18,15 +19,17 @@
                         <img class="top-image" src="./images/top-sellers/desktop/top-s3desk.jpg" alt="chocolate"
                             width="368" />
                     </picture>
-                </div>
-                <p class="top-text">Crazy enough chocolate originates from a bean just like the coffee bean called
-                    Cacao. Cacao
-                    has been around for
-                    thousands of years and was first discovered by the Native American tribe called the Mayans.</p>
+                </div>               
             </li>
-            <li class="top-item">
+            <li class="top-item-prg">
+            <p class="top-text">Crazy enough chocolate originates from a bean just like the coffee bean called
+                Cacao. Cacao
+                has been around for
+                thousands of years and was first discovered by the Native American tribe called the Mayans.</p>
+                </li>
+            <li class="top-item top-mrgn">
                 <div class="top-img">
-                    <picture>
+                    <picture class="top-pic">
                         <source srcset=" ./img/top-sellers/desktop/top-s2desk.jpg 1x,
                                   ./img/top-sellers/desktop/top-s2desk-2x.jpg 2x" media="(min-width: 1200px)" />
 
@@ -39,15 +42,18 @@
                         <img class="top-image" src="./images/top-sellers/desktop/top-s2desk.jpg" alt="chocolate"
                             width="368" />
                     </picture>
-                </div>
-                <div class="top-button">
-                    <button type="submit" class="top-btn">Buy now</button>
-                </div>
+                    </div>    
             </li>
+            <!-- </div> -->
             <li class="top-item">
                 <img class="top-image top-desk" srcset="./img/top-sellers/desktop/top-s1desk.jpg 1x,
                     ./img/top-sellers/desktop/top-s1desk-2x.jpg 2x" src="./img/top-sellers/desktop/top-s1desk.jpg"
                     alt="chocolate" width="368">
+            </li>   
+            <li class="top-item-btn">
+            <div class="top-button">
+                <button type="button" class="top-btn js-open-modal" data-modal="1">Buy now</button>
+            </div>
             </li>
         </ul>
     </div>

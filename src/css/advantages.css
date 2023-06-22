@@ -1,7 +1,10 @@
-.advantages {
+/* ===============MOBILE=============== */
+
+.advantages-section {
   background-color: var(--bg-dark-color);
   height: auto;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .visually-hidden {
@@ -16,13 +19,14 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 .advantages-title-text {
-  /* font-family: 'Montserrat'; */
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 1.22;
   text-align: start;
+  letter-spacing: 0.01em;
   color: var(--text-light-color);
   margin-bottom: 18px;
 }
@@ -51,14 +55,62 @@
   border: 1px solid rgba(255, 255, 255, 0.5);
   margin-bottom: 22px;
 }
-.advantages-container-item {
-  display: block;
-  margin-bottom: 16px;
-}
 
 .advantages-container-list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  column-gap: 20px;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+/* ===============TABLET=============== */
+
+@media screen and (min-width: 768px) {
+  .advantages-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .advantages-container-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  .advantages-container-item {
+    display: block;
+    height: 100%;
+    max-width: 336px;
+  }
+  .advantages-descr-text {
+    max-width: 308px;
+  }
+}
+
+/* ===============DESKTOP=============== */
+
+@media screen and (min-width: 1200px) {
+  .advantages-container-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    gap: 70px;
+  }
+  .advantages-container-item {
+    position: relative;
+    display: block;
+    height: 100%;
+    max-width: 336px;
+  }
+
+  .current::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 124px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    top: 50%;
+    transform: translateY(-50%);
+    right: -18px;
+  }
 }

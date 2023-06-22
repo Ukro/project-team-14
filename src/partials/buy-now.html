@@ -1,1 +1,97 @@
-<div>buy now</div>
+
+    <div class="modal-buy-now" data-modal="1">
+      <button type="button" class="modal-close-btn js-modal-close">
+        <svg class="modal-close-icon">
+          <use href="./img/icons.svg#icon-close-icon"></use>
+        </svg>
+      </button>
+      <h2 class="buy-now-hero-text">BUY <span class="buy-now-text-second">NOW</span></h2>
+      <div class="buy-now-product">
+        <ul class="buy-product-list list">
+          <li class="buy-nov-product-item">
+            <div class="products-card-container">
+              <img class="products-img" srcset="./img/buy-now/chocolate-bar-kinder@2x.jpg 2x"
+                src="./img/buy-now/chocolate-bar-kinder.jpg" alt="chocolate-bar-kinder" />
+              <div class="buy-products-btn">100 g</div>
+            </div>
+          </li>
+          <li class="buy-nov-product-item">
+            <div class="products-card-container">
+              <img class="products-img" srcset="./img/buy-now/chocolate-bar-praline@2x.jpg 2x"
+                src="./img/buy-now/chocolate-bar-praline.jpg" alt="chocolate-bar-praline" />
+              <div class="buy-products-btn">200 g</div>
+            </div>
+          </li>
+          <li class="buy-nov-product-item">
+            <div class="products-card-container">
+              <img class="products-img" srcset="./img/buy-now/transparent-chocolate@2x.jpg 2x"
+                src="./img/buy-now/transparent-chocolate.jpg" alt="transparent-chocolate" />
+              <div class="buy-products-btn">300 g</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <form class="contact-form">
+        <div class="form-wrapper">
+          <label for="user-name" class="contact-form-field-wrapper">
+            <span class="input-text">Personal information</span>
+          </label>
+          <div class="contact-form-input">
+            <input class="form-input" id="user-name" type="text" name="user-name" required title="Write your name"
+              pattern="[a-zA-Zа-яА-ЯіІїЇґҐєЄ']+" placeholder="Name" />
+            <input class="form-input" id="user-surname" type="text" name="user-surname" required title="Write your surname"
+              pattern="[a-zA-Zа-яА-ЯіІїЇґҐєЄ']+" placeholder="Surname" />
+          </div>
+        </div>
+        <div class="form-wrapper">
+          <label for="user-mail" class="contact-form-field-wrapper">
+            <span class="input-text">Email</span>
+          </label>
+          <div class="contact-form-input">
+            <input class="form-input" id="user-mail" type="email" name="email" required title="example@gmail.com"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" placeholder="Enter your email" />
+          </div>
+        </div>
+        <div class="form-wrapper">
+          <label for="user-phone" class="contact-form-field-wrapper">
+            <span class="input-text">Phone number</span>
+          </label>
+          <div class="contact-flag-input">
+            <div class="flag-buy-wrapper">
+              <div class="buy-flag">
+    
+                <svg class="modal-buy-flag" width="32" height="32" fill="none">
+                  <path fill="gold" d="M31.832 5.058H.242v23.509h31.59V5.058Z"></path>
+                  <path fill="#0057B7" fill-rule="evenodd" d="M.243
+                        5.058h31.589v11.754H.242V5.058Z" clip-rule="evenodd"></path>
+                </svg>
+                <p class="phone-code">+380</p>
+              </div>
+            </div>
+            <input class="form-input-flag" id="user-phone" type="tel" name="phone-number" required
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" placeholder="Phone number" />
+          </div>
+    
+        </div>
+        <div class="form-wrapper">
+          <label for="card-number" class="contact-form-field-wrapper">
+            <span class="input-text">Card number</span>
+          </label>
+    
+          <div class="contact-form-input">
+            <input class="form-input" id="card-number" type="tel" name="card-number" required 
+              pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" placeholder="Enter card" maxlength="19" title="xxxx-xxxx-xxxx-xxxx" />
+            <svg class="card-icon" width="32" height="21">
+              <use href="./img/icons.svg#icon-Mastercard"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="form-comment-wrapper">
+          <label class="contact-form-field-wrapper" for="user-comment">
+            <span class="input-text">Comment</span></label>
+          <textarea id="user-comment" class="contact-form-message" name="user-comment" placeholder="Text input"></textarea>
+        </div>
+        <button class="contact-form-submit" type="submit">Submit</button>
+      </form>
+    </div> 
+<div class="backdrop js-overlay-modal"></div>

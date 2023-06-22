@@ -1,0 +1,369 @@
+.reviews-section {
+  background-color: #fafafa;
+  padding-bottom: 72px;
+}
+
+@media screen and (min-width: 375px) {
+  .reviews-container {
+    width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+img {
+  display: block;
+}
+.reviews-section-title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #fd9222;
+  margin-bottom: 74px;
+}
+.reviews-section-title-span {
+  color: #111111;
+}
+
+.reviewers {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  gap: 62px;
+}
+.reviewer-name {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #111111;
+  margin-top: 67px;
+}
+
+.reviewer-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: -0.02em;
+  color: rgba(17, 17, 17, 0.7);
+  display: inline;
+  max-width: 299px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reviewer-container {
+  max-width: 100%;
+  height: 200px;
+  background: #ffffff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
+  border-radius: 15px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.ellipse {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.review-send-btn {
+  width: 165px;
+  height: 41px;
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+}
+
+.tablet-2,
+.tablet-3 {
+  display: none;
+}
+
+/* ========== Modal media ========== */
+@media screen and (min-width: 427px) {
+  .reviews-modal {
+    max-width: 100%;
+  }
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) {
+  .reviews-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 768px;
+  }
+
+  .reviewers {
+    display: flex;
+    flex-direction: row;
+  }
+  .tablet-2 {
+    display: block;
+  }
+  .tablet-3 {
+    display: none;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1200px) {
+  .reviews-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+  }
+  .tablet-3 {
+    display: block;
+  }
+}
+
+/* Modal */
+/* ========== Modal media ========== */
+@media screen and (min-width: 427px) {
+  .reviews-modal {
+    max-width: 100%;
+  }
+}
+
+.reviews-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.reviews-modal {
+  width: 95%;
+  max-width: 311px;
+  padding: 32px 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fafafa;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+.reviews-modal-close-btn {
+  position: absolute;
+  background-color: transparent;
+  top: 14px;
+  right: 14px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #111111;
+  padding: 0;
+  cursor: pointer;
+  border: transparent;
+}
+
+.reviews-modal-close-icon {
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
+  width: 14px;
+  height: 14px;
+}
+
+.form-title {
+  max-width: 255px;
+  height: 48px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.reviews-section-modal-title-span {
+  color: #fd9222;
+}
+
+.form-input {
+  width: 100%;
+  height: 45px;
+  padding: 22px 24px;
+  background-color: transparent;
+  /* outline: transparent; */
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 13px;
+}
+
+.input-wrapper {
+  /* position: relative; */
+  max-width: 437px;
+  height: 45px;
+  margin-bottom: 18px;
+}
+
+.flag-wrapper {
+  display: flex;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-radius: 8px;
+  height: 45px;
+  align-items: center;
+  justify-content: center;
+}
+.flag {
+  display: flex;
+  height: 25px;
+  column-gap: 8px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 18px;
+  padding-right: 8px;
+  border-right: 2px solid rgba(17, 17, 17, 0.05);
+}
+.flag-ukraine {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+
+.phone-code {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+#reviews-modal-user-phone {
+  border: transparent;
+}
+.placeholder {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+}
+
+.textarea {
+  display: block;
+  width: 100%;
+  height: 137px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-radius: 13px;
+  padding: 22px 24px 93px;
+  background-color: transparent;
+
+  resize: none;
+  margin-bottom: 18px;
+}
+
+.reviews-modal-button {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  width: 117px;
+  height: 45px;
+  outline: transparent;
+  background: #fd9222;
+  border-color: transparent;
+  border-radius: 100px;
+  padding: 0;
+}
+
+/* Modal Tablet&Desktop */
+
+@media screen and (min-width: 768px) {
+  .reviews-modal {
+    max-width: 517px;
+    width: 95%;
+  }
+
+  .form-title {
+    font-size: 24px;
+    line-height: 28px;
+    max-width: 298px;
+    margin-bottom: 40px;
+  }
+  .input-wrapper {
+    max-width: 100%;
+    height: 66px;
+    margin-bottom: 18px;
+  }
+  .form-input {
+    height: 66px;
+  }
+  .flag-wrapper {
+    height: 66px;
+  }
+
+  .flag-ukraine {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+  }
+  .placeholder {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .phone-code {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
