@@ -38,9 +38,9 @@
     background-size: contain;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .hero {
-    padding-bottom: 72px;
+    padding-bottom: 71px;
   }
 }
 .hero-section {
