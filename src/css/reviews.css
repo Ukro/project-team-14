@@ -175,7 +175,7 @@ img {
 .reviews-modal {
   width: 95%;
   max-width: 311px;
-  padding: 32px 24px;
+  padding: 32px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -209,9 +209,9 @@ img {
 }
 
 .form-title {
-  max-width: 100%;
-  left: 24px;
-  top: 32px;
+  max-width: 255px;
+  height: 48px;
+
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
@@ -219,7 +219,7 @@ img {
   line-height: 24px;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
 .reviews-section-modal-title-span {
@@ -254,6 +254,7 @@ img {
 }
 .flag {
   display: flex;
+  height: 25px;
   column-gap: 8px;
   align-items: center;
   justify-content: center;
