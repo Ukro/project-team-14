@@ -380,3 +380,33 @@
         padding: 20px;
     }
 }
+
+@media screen and (max-width:374px) {
+    .unique-comonents-list-chocolate {
+        width: auto;
+    }
+
+    .unique-comonents-list-milk {
+        width: auto;
+    }
+
+    .unique-comonents-list-nuts {
+        width: auto;
+    }
+
+    .unique-comonents-list-semi {
+        width: auto;
+    }
+
+    .unique-img {
+        margin-top: auto;
+        margin-left: auto;
+        margin-bottom: 25px;
+        width: auto;
+        height: 171px;
+    }
+
+    .overlay-p {
+        max-width: 100%;
+    }
+}
