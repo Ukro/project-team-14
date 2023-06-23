@@ -8,8 +8,6 @@
   }
 }
 
-
-
 .header {
   background-color: var(--main-bg-color);
 }
@@ -131,8 +129,7 @@
   right: 20px;
   fill: var(--text-light-color);
 
-  transition: fill var(--transition),
-  transform var(--transition);
+  transition: fill var(--transition), transform var(--transition);
 }
 
 .mobile-close-btn:hover,
@@ -223,7 +220,6 @@
     margin-right: auto;
     margin-left: auto;
   } */
-  
 }
 
 @media screen and (min-width: 768px) {
@@ -249,7 +245,7 @@
     height: 16px;
   }
 
-    /* .mobile-container {
+  /* .mobile-container {
       padding: 0;
       max-width: 804px;
       margin-right: auto;
